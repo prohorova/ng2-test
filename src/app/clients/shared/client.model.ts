@@ -24,6 +24,6 @@ interface IContact {
 interface IAddress {
   street: string;
   city: string;
-  zipcode: string;
+  zipCode: string;
   country: string;
 }
