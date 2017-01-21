@@ -1,7 +1,9 @@
 /* tslint:disable:no-unused-variable */
 
 import { TestBed, async } from '@angular/core/testing';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { AppComponent } from './app.component';
+import { Component } from "@angular/core";
 
 describe('AppComponent', () => {
   beforeEach(() => {
@@ -9,6 +11,7 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent
       ],
+      schemas: [ NO_ERRORS_SCHEMA ]
     });
   });
 
