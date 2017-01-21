@@ -1,0 +1,14 @@
+.search-container {
+  position: relative;
+}
+
+.search-container i {
+  color: #ccc;
+  position: absolute;
+  right: 6px;
+  top: 10px;
+}
+
+.search-container input {
+  padding-right: 30px;
+}

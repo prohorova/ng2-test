@@ -1,0 +1,7 @@
+<div class="sidenav">
+  <app-clients-list [clients]="clients" [selected]="selected"
+                    (clientSelected)="onClientSelected($event)"></app-clients-list>
+</div>
+<div class="content">
+  <app-client-details [client]="selected"></app-client-details>
+</div>

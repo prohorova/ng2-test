@@ -1,0 +1,16 @@
+<div>
+  <app-search (searchChange)="onSearchChange($event)"></app-search>
+  <ul class="clients">
+    <li *ngFor="let client of clients | filter:search" class="client row"
+        (click)="onSelect(client)" [ngClass]="{selected: isSelected(client)}">
+      <div class="col-xs-4">
+        <img [src]="client.general.avatar" class="img-responsive img-circle">
+      </div>
+      <div class="col-xs-8">
+          <h4>{{client.general.firstName}} {{client.general.lastName}}</h4>
+          <div class="small text-muted">{{client.job.title}}</div>
+      </div>
+    </li>
+  </ul>
+
+</div>

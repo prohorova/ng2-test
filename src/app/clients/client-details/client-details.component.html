@@ -1,0 +1,40 @@
+<div *ngIf="client">
+  <div class="row">
+    <div class="col-sm-2 col-xs-12"><img class="img-responsive" [src]="client.general.avatar"></div>
+    <div class="contact-info col-sm-10 col-xs-12">
+      <h2>{{client.general.firstName}} {{client.general.lastName}}</h2>
+      <h4>{{client.job.title + ' - '}}{{client.job.company}}</h4>
+      <div class="client-section">
+        <h4>Contact</h4>
+        <div class="row">
+          <div class="col-sm-2">Email:</div>
+          <div class="col-sm-10"><a [href]="getClientEmail(client.contact.email)">{{client.contact.email}}</a></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-2">Phone:</div>
+          <div class="col-sm-10">{{client.job.phone || "-"}}</div>
+        </div>
+      </div>
+      <div class="client-section">
+
+        <h4>Address</h4>
+        <div class="row">
+          <div class="col-sm-2">Street:</div>
+          <div class="col-sm-10">{{client.address.street || "-"}}</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-2">City:</div>
+          <div class="col-sm-10">{{client.address.city || "-"}}</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-2">Zipcode:</div>
+          <div class="col-sm-10">{{client.address.zipcode || "-"}}</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-2">Country:</div>
+          <div class="col-sm-10">{{client.address.country || "-"}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

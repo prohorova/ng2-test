@@ -1,0 +1,22 @@
+.clients {
+  padding: 20px 0 0 0;
+  list-style: none;
+}
+
+.client {
+  border-bottom: 1px solid #eeeeee;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.client:hover, .client.selected {
+  background: #fff;
+}
+
+.client:first-child {
+  border-top: 1px solid #eeeeee;
+}
+
+.client h4 {
+  margin-top: 0;
+}
